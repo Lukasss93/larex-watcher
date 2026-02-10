@@ -1,0 +1,38 @@
+{
+  "name": "larex-watcher",
+  "description": "Laravel Larex Watcher for Vite",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lukasss93/larex-watcher.git"
+  },
+  "author": "Luca Patera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lukasss93/larex-watcher/issues"
+  },
+  "homepage": "https://github.com/Lukasss93/larex-watcher#readme",
+  "main": "index.js",
+  "type": "module",
+  "files": [
+    "dist/"
+  ],
+  "typesVersions": {
+    "*": {
+      "vite": [
+        "dist/vite.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "tsup ./src --external virtual-laravel-translations,vue --format cjs,esm --dts"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@types/node": "^25.2.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}
