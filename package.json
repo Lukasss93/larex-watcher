@@ -17,6 +17,13 @@
   "files": [
     "dist/"
   ],
+  "exports": {
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js",
+      "require": "./dist/*.cjs"
+    }
+  },
   "typesVersions": {
     "*": {
       "vite": [
