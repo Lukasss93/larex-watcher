@@ -28,6 +28,6 @@ jobs:
 
       # Step 4: Publish the package to npmjs
       - name: Publish to npmjs
-        run: npm publish --provenance --access public
+        run: npm publish --provenance=false --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
