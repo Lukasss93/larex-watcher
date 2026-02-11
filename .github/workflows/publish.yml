@@ -21,15 +21,11 @@ jobs:
           node-version: "22.x"
           registry-url: "https://registry.npmjs.org"
 
-      # Step 3: Configure .npmrc to use npm token from secrets
-      - name: Setup npm authentication
-        run: echo "//registry.npmjs.org/:_authToken=\${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-
-      # Step 4: Install dependencies
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm i
 
-      # Step 5: Publish the package to npmjs
+      # Step 4: Publish the package to npmjs
       - name: Publish to npmjs
         run: npm publish --provenance --access public
         env:
