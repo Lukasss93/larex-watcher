@@ -1,7 +1,7 @@
 {
   "name": "@lukasss93/larex-watcher",
   "description": "Laravel Larex Watcher for Vite",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "repository": {
     "type": "git",
     "url": "https://github.com/Lukasss93/larex-watcher.git"
