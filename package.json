@@ -1,7 +1,7 @@
 {
   "name": "@lukasss93/larex-watcher",
   "description": "Laravel Larex Watcher for Vite",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": {
     "type": "git",
     "url": "https://github.com/Lukasss93/larex-watcher.git"
@@ -15,7 +15,8 @@
   "main": "index.js",
   "type": "module",
   "files": [
-    "dist/"
+    "dist/",
+    "README.md"
   ],
   "exports": {
     "./*": {
@@ -41,5 +42,8 @@
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
     "vite": "^7.3.1"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
