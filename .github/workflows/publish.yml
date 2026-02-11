@@ -15,11 +15,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      # Step 2: Setup Node.js 22.x environment and set npm registry
-      - name: Setup Node.js 22.x
+      # Step 2: Setup Node.js environment and set npm registry
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "24"
           registry-url: "https://registry.npmjs.org"
 
       # Step 3: Install dependencies
