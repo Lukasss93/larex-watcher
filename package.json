@@ -1,10 +1,10 @@
 {
   "name": "@lukasss93/larex-watcher",
   "description": "Laravel Larex Watcher for Vite",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lukasss93/larex-watcher.git"
+    "url": "https://github.com/Lukasss93/larex-watcher"
   },
   "author": "Luca Patera",
   "license": "MIT",
