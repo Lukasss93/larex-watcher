@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: Publish on NPM
+    environment: Publish
     permissions:
       contents: write
       id-token: write
@@ -28,4 +28,4 @@ jobs:
 
       # Step 4: Publish the package to npmjs
       - name: Publish to npmjs
-        run: npm publish --provenance --access public
+        run: npm publish --provenance=false --access public
