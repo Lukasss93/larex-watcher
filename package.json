@@ -1,24 +1,31 @@
 {
   "name": "@lukasss93/larex-watcher",
   "description": "Laravel Larex Watcher for Vite",
-  "version": "1.0.15",
+  "homepage": "https://github.com/Lukasss93/larex-watcher#readme",
+  "author": "Luca Patera",
+  "license": "MIT",
+  "version": "1.0.16",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/Lukasss93/larex-watcher"
   },
-  "author": "Luca Patera",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Lukasss93/larex-watcher/issues"
   },
-  "homepage": "https://github.com/Lukasss93/larex-watcher#readme",
-  "main": "index.js",
-  "type": "module",
   "files": [
     "dist/",
     "README.md"
   ],
   "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
     "./*": {
       "types": "./dist/*.d.ts",
       "import": "./dist/*.js",
@@ -27,6 +34,9 @@
   },
   "typesVersions": {
     "*": {
+      "*": [
+        "dist/index.d.ts"
+      ],
       "vite": [
         "dist/vite.d.ts"
       ]
