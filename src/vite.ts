@@ -3,15 +3,16 @@ import type { UserConfig, ViteDevServer } from 'vite';
 import fs from 'fs';
 import { exec, execSync } from 'node:child_process';
 import { styleText} from 'node:util';
+import type { Plugin } from 'vite';
 
-interface PluginConfig {
+export interface PluginConfig {
     path: string;
     command: string;
     build: boolean;
     dev: boolean;
 }
 
-export default function larex(options?: PluginConfig) {
+export default function larex(options?: PluginConfig): Plugin {
     const targetPath = options?.path || 'lang/localization.csv';
     const command = options?.command || 'composer run larex';
     const runOnBuild = options?.build || true;
